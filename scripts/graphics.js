@@ -41,7 +41,7 @@ var graphics = (function(){
     tiles = {
       size: 500,
       src0: "assets/map/marsh background [www.imagesplitter.net]-",
-      src1: "assets/map/forestBackground [www.imagesplitter.net]-",
+      src1: "assets/map/ForestBackground [www.imagesplitter.net]-",
       src2: "assets/map/castle/castle [www.imagesplitter.net]-",
       src3: "assets/map/mountain/mountain [www.imagesplitter.net]-",
       columns: 16,
