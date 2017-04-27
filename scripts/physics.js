@@ -307,31 +307,31 @@ var physics = (function(){
 
                 if(pair.bodyA === character.returnSensor()) {
                     if(character.returnDirection() === 'down' && character.returnAttackState()){
-                        
+
                         if(pair.bodyB.label !== "pot"){
                             enemyMatchingId(enemies, pair.bodyB.id).damaged();
                         }
-                        
+
                     }
                     if(character.returnDirection() === 'up' && character.returnAttackState()){
-                        
+
                         if(pair.bodyB.label !== "pot"){
                             enemyMatchingId(enemies, pair.bodyB.id).damaged();
-                        }                        
+                        }
                     }
                     if(character.returnDirection() === 'right' && character.returnAttackState()){
-                        
+
                         if(pair.bodyB.label !== "pot"){
                             enemyMatchingId(enemies, pair.bodyB.id).damaged();
                         }
-                        
+
                     }
                     if(character.returnDirection() === 'left' && character.returnAttackState()){
-                        
+
                         if(pair.bodyB.label !== "pot"){
                             enemyMatchingId(enemies, pair.bodyB.id).damaged();
                         }
-                        
+
                     }
 
                 }
@@ -339,32 +339,32 @@ var physics = (function(){
                     //pair.bodyB.isStatic = false;
                     // Matter.Body.applyForce(pair.bodyA, pair.bodyA.position, {x: 100 * pair.bodyA.mass, y:0});
                     if(character.returnDirection() === 'down' && character.returnAttackState()){
-                        
+
                         if(pair.bodyA.label !== "pot"){
                             enemyMatchingId(enemies, pair.bodyA.id).damaged();
                         }
-                        
+
                     }
                     if(character.returnDirection() === 'up' && character.returnAttackState()){
-                        
+
                         if(pair.bodyA.label !== "pot"){
                             enemyMatchingId(enemies, pair.bodyA.id).damaged();
                         }
-                        
+
                     }
                     if(character.returnDirection() === 'right' && character.returnAttackState()){
-                        
+
                         if(pair.bodyA.label !== "pot"){
                             enemyMatchingId(enemies, pair.bodyA.id).damaged();
                         }
-                        
+
                     }
                     if(character.returnDirection() === 'left' && character.returnAttackState()){
-                        
+
                         if(pair.bodyA.label !== "pot"){
                             enemyMatchingId(enemies, pair.bodyA.id).damaged();
                         }
-                        
+
                     }
                 }
             }
